@@ -1,0 +1,38 @@
+<!--pages/messages/messages.wxml-->
+<!-- 信息页 -->
+<view class="outer">
+  <view class="container">
+    <navigator url="../command-me/command-me" class="click-box">
+      <view class="command-me">
+        <text class="text">评论我的  >></text>
+        <view class="icon">
+          <image src="../../icons/notice-me-icon.png" class="icon-page"></image>
+        </view>
+      </view>
+    </navigator>
+
+    <view class="divLine1"></view>
+    
+    <navigator url="../command-by-me/command-by-me" class="click-box">
+      <view class="command-by-me">
+        <text class="text">我的评论  >></text>
+        <view class="icon">
+          <image src="../../icons/command-me-icon.png" class="icon-page"></image>
+        </view>
+      </view>
+    </navigator>
+
+    <view class="divLine2"></view>
+    
+    <navigator url="../thump-up-me/thump-up-me" class="click-box">
+      <view class="thump-up-by-me">
+        <text class="text">点赞我的  >></text>
+        <view class="icon">
+           <image src="../../icons/thump-me-icon.png" class="icon-page"></image>
+        </view>
+      </view>
+    </navigator>
+    
+  </view>
+</view>
+

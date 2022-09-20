@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+
+<view class="url">
+  <open-data class="userAvatarUrl" type="userAvatarUrl"></open-data>    
+</view>
+ 
+<view class="name">
+  <open-data class="userNickName line1" type="userNickName" lang="zh_CN"></open-data>
+</view>
+
+<button type="primary" plain open-type="getUserInfo" bindtap="log">登录</button>
+

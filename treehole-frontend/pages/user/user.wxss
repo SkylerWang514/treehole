@@ -1,0 +1,34 @@
+/* pages/setting/setting.wxss */
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+ 
+.line1{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+}
+ 
+.userAvatarUrl {
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40rpx auto;
+}
+.userNickName{
+  max-width: 300rpx;
+  display:block;
+}
+.name{
+  margin:40rpx auto;
+  text-align:right;
+  display:flex;
+  justify-content: center;
+}
+.url{
+  margin:10rpx auto;
+  text-align:left
+}

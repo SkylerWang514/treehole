@@ -1,0 +1,2 @@
+<!--pages/setting/setting.wxml-->
+<button bindtap="openActionAf">退出登录</button>

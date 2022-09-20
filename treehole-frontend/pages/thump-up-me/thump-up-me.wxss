@@ -1,0 +1,90 @@
+/* pages/thump-up-me/thump-up-me.wxss */
+
+/* 最外层 竖向排列消息 */
+.list{
+  background-color:rgba(225, 241, 230, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+/* 每条信息内部头像与信息横排 */
+.user{
+  display: flex;
+  flex-direction: row;
+}
+/* 上下提示+动态内容 */
+.content{
+  display: flex;
+  flex-direction: column;
+}
+/* 头像 */
+.header-icon{
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 80rpx;
+  margin-left: 20rpx;
+  margin-top: 26rpx;
+}
+/* 上面一条显示“被点赞”提示+时间 */
+
+/* .apart{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  width: 400rpx;
+} */
+.note{
+  font-size: 32rpx;
+  margin-top: 26rpx;
+  font-weight: 400;
+  margin-right: 0;
+}
+.note text{
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.time{
+  display: flex;
+  width: 60rpx;
+  font-size: 24rpx;
+  margin-top: 36rpx;
+  color: #aeaeae;
+  margin-left: 140rpx;
+}
+
+/*第二行 动态内容前一部分*/
+.secondline{
+  display: flex;
+  flex-direction: row;
+}
+/*消息内容*/
+.dialog{
+  width: 545rpx;
+  font-size: 28rpx;
+  color: #aeaeae;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+.dialog text{
+  margin-left: 10rpx;
+}
+/*气泡样式 提示有多少条未读*/
+.bubble{
+  background-color: #4ee29d;
+  border-radius: 80rpx;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+}
+.bubble .num{
+  font-size: 28rpx;
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 12rpx;
+}
+.linecut{
+  width: 100%;
+  height: 2rpx;
+  background-color: #F2F2F2;
+  margin-top: 26rpx;
+}

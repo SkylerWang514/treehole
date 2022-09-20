@@ -1,0 +1,25 @@
+<!--pages/feedback/feedback.wxml-->
+<!-- 文本框输入 -->
+<!-- <view class='father_view'>
+ 
+ <view class='son_view'>
+
+   <view class="title-bg">感谢您的宝贵建议:</view>
+   <textarea class="textarea-bg" placeholder="请输入内容" bindblur="getDataBindTap" auto-height />
+
+ </view> -->
+<!-- 提交按钮 -->
+ <!-- <input  bindinput="talk" />
+<button bindtap="oks">提交</button>
+</view> -->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="row">
+      <text>反馈内容：</text>
+      <input type="text" name='feedbackContent' placeholder="请输入您的宝贵建议" bindinput="input" value="{{feedbackContent}}" />
+    </view>
+    <view class="row">
+      <button  form-type="submit">提交</button>
+    </view>  
+  </form>
+</view>

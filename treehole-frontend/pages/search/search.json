@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput"
+    },
+  "navigationBarTitleText":"搜索"
+}

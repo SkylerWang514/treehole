@@ -1,0 +1,27 @@
+/* pages/login/login.wxss */
+
+button{
+  margin-top: 90rpx;
+}
+.userAvatarUrl {
+  width: 190rpx;
+  height: 180rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40rpx auto;
+}
+.userNickName{
+  max-width: 300rpx;
+  display:block;
+}
+.name{
+  margin:60rpx auto;
+  text-align:right;
+  display:flex;
+  justify-content: center;
+}
+.url{
+  margin:10rpx auto;
+  text-align:left
+}

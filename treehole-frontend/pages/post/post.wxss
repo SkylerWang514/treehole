@@ -1,0 +1,101 @@
+/* pages/post/post.wxss */
+
+.self{
+  display: flex;
+  margin-left: 30rpx;
+  height: 90rpx;
+}
+
+.text{
+  border-radius: 10rpx;
+  border: 1px solid rgb(198, 216, 198) ;
+  padding: 10rpx;
+  height: 700rpx;
+  box-shadow: 2px 2px 4px  rgba(119, 118, 118, 0.4);
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: rgba(225, 241, 230, 0.2);
+  margin-top: 20px;
+  margin-left: 10px;
+  line-height: 50rpx;
+  letter-spacing: 3rpx;
+  color: #646566;
+  font-size: 35rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  height: 300px;
+}
+
+.avatar{
+  border-width: 2rpx;
+  border-color: black;
+  border-radius: 25px;
+}
+.avatar image{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 90rpx;
+  height: 90rpx;
+  float:left; 
+  border-radius: 25px;
+}
+
+.user-name{
+  font-size: 35rpx;
+  margin-top: 45rpx;
+  margin-left: 35rpx;
+  margin-right:10rpx;
+  float:left;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.button_view{
+  margin-left: 550rpx;
+  margin-right: 50rpx;
+}
+.post{
+  /* position: absolute; */
+  width: 150rpx!important;
+  height: 80rpx;
+  line-height: 80rpx!important;
+  right: 0%!important;
+  font-size:26rpx;
+  padding: 0rpx;
+  border-radius: 8%;
+  background: rgb(242, 247, 242);
+}
+
+.post::after {
+  border: 0;
+}
+
+.checkbox{
+  margin: 10px;
+  margin-top: 0px;
+  text-align: center;
+  position: absolute;
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  left: 0%;
+  font-size:26rpx;
+  padding: 0rpx;
+}
+
+checkbox .wx-checkbox-input{
+  border-radius: 50%;
+  width: 40rpx; 
+  height: 40rpx; 
+}
+.com{
+  display: flex;
+  margin-left: 10rpx;
+  height: 90rpx;
+}

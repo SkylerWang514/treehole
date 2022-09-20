@@ -1,0 +1,28 @@
+<!--pages/thump-up-me/thump-up-me.wxml-->
+<!-- 点赞我的 -->
+
+<view class = 'list' wx:for="{{myThumbList}}" wx:key="*this">
+  <!--示例四条点赞信息-->
+  <view class='user' bindtap='goTocontactPage'>
+    <image class='header-icon' src='{{item.avatar}}'></image>
+    <view class='content'>
+      <view class='firstline'>
+          <view class='note'>
+            <text>你的这条动态被{{item.uname}}点赞了</text>
+          </view>
+      </view>
+      <view class='secondline'>
+        <view class='dialog'>
+          <text> {{item.tcontent}}</text>
+        </view>
+        <!-- <view class='dialog-nums'>
+          <view class='bubble'>
+            <view class='num'>2</view>
+          </view>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <!--分割线-->
+  <view class='linecut'></view>
+</view>

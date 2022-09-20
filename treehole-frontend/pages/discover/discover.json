@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput"
+  },
+  "navigationBarTitleText":"发现",
+  "backgroundColor": "#8fbc8f",
+  "enablePullDownRefresh": true 
+}

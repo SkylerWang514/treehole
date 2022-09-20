@@ -1,0 +1,21 @@
+server:
+  port: 8443
+#  ssl:
+#    key-store: classpath:5991995_www.treehole.online.jkstreehole
+#    key-store-password: 4qhO9Rk3
+#    key-store-type: JKS
+spring:
+  datasource:
+    url: jdbc:mysql://rm-bp1e8h4j6569s56ajno.mysql.rds.aliyuncs.com:3306/treehole
+    username: root
+    password: Qiao12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.shudong.treehole.mapper: debug
+
+

@@ -1,0 +1,15 @@
+<!--pages/setting/setting.wxml-->
+<view class="url">
+  <open-data class="userAvatarUrl" type="userAvatarUrl"></open-data>    
+</view>
+ 
+<view class="name">
+  <open-data class="userNickName line1" type="userNickName" lang="zh_CN"></open-data>
+</view>
+ 
+<button bindtap="goToMyhomePage">个人空间</button>
+<button bindtap="goToSettingPage">设置</button>
+<button bindtap="goToFeedbackPage">反馈</button>
+<button bindtap="goToVersionPage">版本信息</button>
+<button bindtap="goToDeveloperPage">开发人员</button>
+<!-- <navigator url="../setting/setting" hover-class=""></navigator> -->

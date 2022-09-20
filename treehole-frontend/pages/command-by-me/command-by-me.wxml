@@ -1,0 +1,49 @@
+<!--pages/command-by-me/command-by-me.wxml-->
+
+<view wx:for="{{myCommentList}}" wx:key="*this" class="commentlist">
+  <view class="onerow">
+    <view class="avatar">
+      <image src="{{avatar}}"></image>
+    </view>
+    <view class="self_name">
+      <text>{{uname}}</text>
+    </view>
+    <text class="time">{{item.cTime}}</text>
+  </view>
+  <view class="my_comment">
+      <text class="comment_thing">{{item.ccontent}}</text>
+    </view>
+    <navigator  url="../discover-details/discover-details?avatar={{item.treeholeVO.avatar}}&nickname={{item.treeholeVO.uname}}&tcontent={{item.treeholeVO.tcontent}}&thumbnum={{item.treeholeVO.thumbNum}}&commentnum={{item.treeholeVO.commentNum}}&tid={{item.treeholeVO.tid}}&flag={{thumbFlagList[index]}}&index={{index}}&ttime={{treeholeList[index].ttime}}&ano={{item.treeholeVO.anonymousOrNot}}" class="news">
+      <!--左上用户信息+时间信息-->
+      <view class="avatar">
+        <image src="{{item.treeholeVO.avatar}}" ></image>
+      </view>
+      <view class="user-name">
+        <text>{{item.treeholeVO.uname}}</text>
+        <text class="time">{{item.treeholeVO.tTime}}</text>
+      </view>
+
+      <view class="body">
+        <!--内容-->
+        <view class="content">
+          <text>{{item.treeholeVO.tcontent}}</text>
+        </view>
+      </view>
+        <!--点赞信息-->
+        <view class="body-right">
+          <view class="like" wx:if="{{thumbFlagList[index] == 'true'}}">
+            <image src="{{thumbUrl}}"></image>
+            <text>{{item.treeholeVO.thumbNum}}</text>
+          </view>
+          <view class="like" wx:else>
+            <image src="{{thumbUrl1}}"></image>
+            <text>{{item.treeholeVO.thumbNum}}</text>
+          </view>
+          <view class="comment">
+            <image src="../../icons/comment.png"></image>
+            <text>{{item.treeholeVO.commentNum}}</text>
+          </view>
+        </view>
+    
+  </navigator>
+</view>

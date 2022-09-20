@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/discover/discover",
+    "pages/messages/messages",
+    "pages/user/user",
+    "pages/discover-details/discover-details",
+    "pages/logs/logs",
+    "pages/setting/setting",
+    "pages/version/version",
+    "pages/feedback/feedback",
+    "pages/developer/developer",
+    "pages/post/post",
+    "pages/command-me/command-me",
+    "pages/thump-up-me/thump-up-me",
+    "pages/command-by-me/command-by-me",
+    "pages/search/search",
+    "pages/my-home/my-home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#a9d4a9",
+    "navigationBarTitleText": "窝工树洞",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#a9d4a9"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "icons/find.png",
+        "selectedIconPath": "icons/find_clicked.png"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "信息",
+        "iconPath": "icons/note.png",
+        "selectedIconPath": "icons/note_clicked.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my_clicked.png"
+      }
+    ]
+  }
+}

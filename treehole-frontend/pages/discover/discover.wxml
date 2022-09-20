@@ -1,0 +1,63 @@
+<!--pages/discover/discover.wxml-->
+<!-- 发现页 -->
+
+<!--搜索用户-->
+<view class="discover">
+  <SearchInput></SearchInput>
+</view>
+
+<view wx:for="{{treeholeList}}" wx:key="tid" wx:for-index="index">
+  <navigator  url="../discover-details/discover-details?avatar={{item.avatar}}&nickname={{item.uname}}&tcontent={{item.tcontent}}&thumbnum={{item.thumbNum}}&commentnum={{item.commentNum}}&tid={{item.tid}}&flag={{thumbFlagList[index]}}&index={{index}}&ttime={{treeholeList[index].tTime}}&ano={{item.anonymousOrNot}}">
+    <view  class="{{styleList[index]}}" data-index="index" bindtap="styleset">
+      <!--左上用户信息+时间信息-->
+      <view class="avatar">
+        <view wx:if="{{item.anonymousOrNot == false}}">
+          <image src="{{item.avatar}}"></image>
+         </view>
+         <view wx:else>
+          <image src="../../icons/toy2.png"></image>
+         </view>
+      </view>
+      <view class="user-name">
+        <view wx:if="{{item.anonymousOrNot == false}}">
+          <text>{{item.uname}}</text>
+         </view>
+         <view wx:else>
+          <text>匿名用户</text>
+         </view>
+        <text class="time">{{item.tTime}}</text>
+      </view>
+
+      <view class="body">
+        <!--内容-->
+        <view class="content">
+          <text>
+            {{item.tcontent}}
+          </text>
+        </view>
+      </view>
+        <!--点赞信息-->
+        <view class="body-right">
+          <view class="like" wx:if="{{thumbFlagList[index] == 'true'}}">
+            <image src="{{thumbUrl}}"></image>
+            <text>{{item.thumbNum}}</text>
+          </view>
+          <view class="like" wx:else>
+            <image src="{{thumbUrl1}}"></image>
+            <text>{{item.thumbNum}}</text>
+          </view>
+          <view class="comment">
+            <image src="../../icons/comment.png"></image>
+            <text>{{item.commentNum}}</text>
+          </view>
+        </view>
+      </view>
+    
+  </navigator>
+</view>
+
+<navigator url="../post/post">
+  <view class="add-icon">
+   <image src="../../icons/add-circle-Fill.png"></image>
+  </view>
+</navigator>

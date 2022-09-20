@@ -1,0 +1,104 @@
+<!--pages/discover-details/discover-details.wxml-->
+
+<view>
+  <view class="user-message">
+
+    <view wx:if="{{ano == 'false'}}">
+      <view class="avatar">
+        <image src="{{avatar}}"></image>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="avatar">
+        <image src="../../icons/toy2.png"></image>
+      </view>
+    </view>
+
+    <view class="user-name">
+      <view wx:if="{{ano == 'false'}}">
+        <p>{{nickname}}</p>
+      </view>
+      <view wx:else>
+        <p>匿名用户</p>
+      </view>
+
+      <text class="ttime">{{ttime}}</text>
+    </view>
+  </view>
+  <view class="context">
+    <text>{{tcontent}}</text>
+  </view>
+</view>
+
+<view class="greet-info">
+  <view class="like">
+    <image src="{{thumbUrl}}" bindtap="thumbUp"></image>
+  </view>
+  <view class="like-text">
+    <text>{{thumbnum}}</text>
+  </view>
+  <view class="com">
+    <image src="../../icons/comment.png"></image>
+  </view>
+  <view class="com-text">
+    <text>{{commentnum}}</text>
+  </view>
+</view>
+
+<checkbox-group bindchange="anonymousOrNot">
+  <view class="checkbox">
+    <checkbox value="是否匿名" />
+    <text>匿名</text>
+  </view>
+</checkbox-group>
+
+<view class="comment-container">
+  <view class="comment-text">
+    <view>
+      <text>评论：</text>
+    </view>
+  </view>
+</view>
+
+<view class="comment">
+  <input class='input' bindinput='bindblur' cursor-spacing="130" placeholder='说点什么吧...' placeholder-class='holder' bindconfirm="publish" value="{{comContent}}"
+    maxlength="76">
+  </input>
+</view>
+
+<view class="container">
+  <view class="total">共{{commentnum}}条评论</view>
+  <!--分割线-->
+  <view class='linecut'></view>
+  <!-- 用户评论回复显示区域 -->
+  <view class="container-item" wx:for="{{commentList}}" wx:key="*this">
+    <view wx:if="{{item.anonymousOrNot == false}}">
+      <image class="item_img" src="{{item.avatar}}"></image>
+    </view>
+    <view wx:else>
+      <image class="item_img" src="../../icons/toy2.png"></image>
+    </view>
+    <view class="item_right">
+      <view wx:if="{{item.anonymousOrNot == false}}">
+        <view class="right_name">{{item.uname}}
+        <text class="time">{{item.cTime}}</text>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="right_name">匿名用户
+        <text class="time">{{item.cTime}}</text>
+      </view>
+    </view>
+
+     
+
+      <view class="right_content">
+        <text class="right_content_txt" bindtap='replyComment' data-type="1">{{item.ccontent}}</text>
+        
+      </view>
+    </view>
+  </view>
+  <view class="end">
+    <text class="end_txt" space="nbsp">— THE END —</text>
+  </view>
+</view>
